@@ -1,0 +1,586 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing digital</title>
+    <!-- balise pour les referecement-->
+    <meta name="description"
+          content="Bienvenue chez Fulife Consulting ! Nous sommes une agence dynamique et passionnée spécialisée dans la conception de sites web de qualité, le référencement et le marketing en ligne.
+            agence web spécialisée dans la création de sites web et le marketing en ligne. Contactez-nous pour obtenir des solutions digitales personnalisées.">
+
+    <meta name="agence web, startup, entreprise numerique, douala" content="Fulife est une agence web  à Douala. Nous mettons en œuvre des stratégies numériques telles que la conception de sites web, le référencement naturel et payant (SEO) ainsi que la conception graphique (création de logos, de cartes d’affaires, de flyers et d’affiches)." >
+
+    <meta name="keywords" content="Agence web, informatique, Agence numerique, Douala, Marketing Digitale, Entreprise numérqiue, creation de site web
+                marketing en ligne, solutions digitales, conception de site web,stratégie en ligne, Design, infographe, application moblie, E-commerce
+                hebergement, hebergement web, Sécurité en ligne, solution Numerique, Reseau informatique, Developpement web, Design Web, Programmation web, Réseaux sociaux
+                   Sécurité informatique">
+
+    <meta name="robots" content="index,follow">
+    <!--fin-->
+
+    <!-- Balises Open Graph pour le partage social -->
+
+    <meta property="og:title" content="Fulife Consulting - Solutions digitales,Agence web, informatique, Agence numerique, Douala, Marketing Digitale, Entreprise numérqiue, creation de site web
+                marketing en ligne,conception de site web,stratégie en ligne, Design, infographe, application moblie, E-commerce
+                hebergement, hebergement web, Sécurité en ligne, solution Numerique, Reseau informatique, Developpement web, Design Web, Programmation web, Réseaux sociaux
+                   Sécurité informatique">
+
+    <meta property="og:description"
+          content="Agence web spécialisée dans la création de sites web et le marketing en ligne. Contactez-nous pour obtenir des solutions digitales personnalisées.
+            Bienvenue chez Fulife Consulting ! Nous sommes une agence dynamique et passionnée spécialisée dans la conception de sites web de qualité, le référencement et le marketing en ligne.
+            agence web spécialisée dans la création de sites web et le marketing en ligne. Contactez-nous pour obtenir des solutions digitales personnalisées.
+                Nous sommes reconnus pour notre large gamme de services et de stratégies créatives, ainsi que pour la qualité de nos réalisations. Nous accompagnons et formons nos clients pour
+                 qu'ils puissent profiter pleinement des solutions que nous élaborons avec eux.">
+
+        <meta property="og:image" content="{% static 'public/ellipse-11@2x.png' %}">
+        <meta property="og:url" content="https://www.votre-agence-web.com">
+
+    <!--fin-->
+
+    <!-- Balise de lien vers votre fichier de flux RSS -->
+    <link rel="alternate" type="application/rss+xml" href="rss.xml">
+    <!--fin-->
+        <!-- Balise de lien vers  le compte Google Analytics -->
+    <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXX-X');
+  </script>  -->
+
+    <!--fin -->
+
+    <link rel="stylesheet" href="{% static 'css/loading.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/app_w_m.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/css-part2.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'public/ellipse-11@2x.png' %}" />
+
+
+  <!--
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css-part.css">
+    <link rel="stylesheet" href="./assets/app_w_m.css">
+    -->
+   <style>
+    .sticky{
+        position: sticky;
+        top: 50px;
+    }
+   </style>
+
+</head>
+<body>
+                <div id="loader"></div>
+
+    <section class="pre-h d-lg-flex d-none justify-content-between p-2 ">
+        <div class="d-flex">
+            <div style="margin-right: 10px;"><img src="{% static 'public/ellipse-80@2x.png' %}" alt="tel">237 695607089</div>
+            <div style="margin-right: 10px;"><img class="m-r-1" src="{% static 'public/ellipse-81@2x.png' %}" alt="mail"> info@fulife-consulting.cm</div>
+            <div style="margin-right: 10px;"><img class="m-r-1" src="{% static 'public/ellipse-82@2x.png' %}" alt=""> Ouverture : Lun-Sam : 8h30-19h30</div>
+        </div>
+        <div class="d-flex">
+            <a href="https://www.facebook.com/fulifesarl" target="_blank">
+            <img class="m-1" src="{% static 'public/ellipse-12@2x.png' %}" alt="facebook">
+            </a>
+            <a href="https://twitter.com/Fulifesarl?s=09" target="_blank">
+            <img class="m-1" src="{% static 'public/ellipse-13@2x.png' %}" alt="twitter">
+            </a>
+            <a href="https://instagram.com/fulifesarl?igshid=MzRlODBiNWFlZA==" target="_blank">
+            <img class="m-1" src="{% static 'public/ellipse-14@2x.png' %}" alt="instagram">
+            </a>
+            <a href="https://youtube.com/@fulifeconsulting6456" target="_blank">
+            <img class="m-1" src="{% static 'public/ellipse-15@2x.png' %}" alt="youtube">
+            </a>
+            <a href="https://www.linkedin.com/company/fulifesarl/" target="_blank">
+            <img  class="m-1" src="{% static 'public/ellipse-16@2x.png' %}" alt="linkln">
+            </a>
+            <a href="https://wa.me/+237695607089" target="_blank">
+            <img class="m-1" src="{% static 'public/ellipse-17@2x.png' %}" alt="whatsapp">
+            </a>
+            <a href="{% url 'chatbot' %}" target="_blank">
+            <img class="m-1" src="{% static 'public/ellipse-18@2x.png' %}" alt="chat">
+            </a>
+        </div>
+    </section>
+
+    <section class="d-block " style="position: relative;">
+        <div class="h-top container">
+            <div class=" head row">
+                <div class="col-5 head-l">
+                    <a href="{% url 'acceuil' %}">
+                    <img src="{% static 'public/ellipse-11@2x.png' %}" class="img-fluid rounded-top" alt="logo">
+                    </a>
+                </div>
+                <div class="col-7 head-r d-flex justify-content-between align-items-center ">
+                    <div class="d-xl-none" ></div>
+                    <button class="btn btn-primary d-xl-none ml-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menus</button>
+                    <div class="menu d-xl-block d-none">
+                        <a class="link" href="{% url 'acceuil' %}">Accueil</a>
+                        <a class="link" href="{% url 'a-propos' %}">A propos</a>
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+                       <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'dev-web-mobile' %}">Développement web et mobile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'reseau&administrtion' %}">Reseau Informatique</a></li>
+                        <li><a class="dropdown-item" href="{% url 'reseau&administrtion' %}">Administration systeme</a></li>
+                           <li><a class="dropdown-item" href="{% url 'marketing' %}">Marketing Digital</a></li>
+                        <li><a class="dropdown-item" href="{% url 'hebergement' %}">Hebergement web</a></li>
+                           <li><a class="dropdown-item" href="{% url 'formation' %}">Conseil et formation</a></li>
+                      </ul>
+                        <a class="link" href="{% url 'realisation' %}">Realisation</a>
+                        <a class="link" href="{% url 'contact' %}">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="height: 70vh;" src="{% static 'public/slide/rectangle-120@2x.png' %}" class="d-block w-100" alt="slide1">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 70vh;" src="{% static 'public/slide/rectangle-146@2x.png' %}" class="d-block w-100" alt="slide2">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 70vh;" src="{% static 'public/slide/rectangle-146@2x.png' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+
+
+            <!--
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="height: 70vh;" src="./assets/image/slide/rectangle-120@2x.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 70vh;" src="./assets/image/slide/rectangle-146@2x.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 70vh;" src="./assets/image/slide/rectangle-120@2x.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <img style="width: 270px;" src="{% static 'public/ellipse-218@21x.png' %}" alt="">
+            </div>
+            <h1 class="my-4 text-center px-2 px-md-5">
+                Une Agence De Marketing Et Communication Digitale Orientée Résultats
+            </h1>
+
+            <h3 class="text-center">
+                Fulife Consulting est une agence de marketing numérique qui opère depuis Douala, au Cameroun, et accompagne les entreprises à travers toute l'Afrique dans leurs initiatives de marketing numérique, de gestion de leur réputation en ligne et d'augmentation de leur chiffre d'affaires. Nous excelons dans les principaux leviers de développement de la visibilité en ligne, notamment la création de sites web, l'optimisation de la visibilité Google grâce au référencement naturel (SEO) et au référencement payant (Google Ads et Google Shopping), ainsi que l'amélioration de votre présence sur les réseaux sociaux et le Web. Nous possédons une expertise en Growth Hacking et offrons des solutions adaptées à votre entreprise pour stimuler votre croissance.
+            </h3>
+
+
+        </div>
+    </section>
+
+    <section class="cont-awm-2 mt-5">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-6 ">
+                   <div class="sticky">
+                        <h2 class="my-4">Laissez une seule agence s'occuper de tout ce qui concerne votre marketing digital.</h2>
+                        <h4>
+                            Peu importe vos besoins en termes de marketing digital, nous sommes là pour vous fournir une solution adaptée. Si vous cherchez à améliorer votre référencement naturel (SEO), à faire de la publicité en ligne (via Google Ads, Facebook Ads, YouTube Ads, etc.), à mettre en place des campagnes emailing, ou encore à gérer vos médias sociaux, notre agence digitale peut répondre à tous ces besoins et vous offrir un accompagnement complet.
+                        </h4>
+                        <h4>
+                            Nous nous concentrons sur les actions les plus efficaces pour stimuler votre croissance, en concevant des stratégies marketing numériques qui apportent plus de prospects, de ventes et de profits à votre entreprise. Notre agence de marketing digital, Fulife Consulting, crée un plan de marketing numérique agressif et complet pour propulser votre entreprise vers de nouveaux sommets.
+                        </h4>
+                   </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-40@2x.png' %}" alt=""></div>
+
+                                    <h6>Gestion des réseaux sociaux</h6>
+                                    <p>Publicité sur les réseaux sociaux</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-402@2x.png' %}" alt=""></div>
+                                    <h6>Optimisation de la visibilité en ligne</h6>
+                                    <p>Amélioration de l'indexation des pages de votre site internet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-401@2x.png' %}" alt=""></div>
+
+                                    <h6>Annonces en ligne</h6>
+                                    <p>Création et gestion de campagnes publicitaires digitales </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-403@2x.png' %}" alt=""></div>
+                                    <h6>Rédaction créative pour le web</h6>
+                                    <p>Création de contenu optimisé pour le web</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 100px;" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div>
+                        <img class="reveal-r1" style="width: 330px;" src="{% static 'public/rectangle-21@29x.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex  align-items-center">
+                   <div>
+                    <h3 class="mb-5">
+                        Pourquoi votre entreprise doit-elle mettre en place une stratégie de marketing numérique
+                    </h3>
+                    <h5>
+                        Le marketing numérique offre une solution complète pour mettre en relation une entreprise avec son audience à travers une variété d'outils digitaux, devenant ainsi un moyen idéal pour assurer une présence en ligne.
+                    </h5>
+                   </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="my-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Services de pointe offertes par notre Agence</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="reveal-l2 card" style="border: none;">
+                        <div class="card-body" style="background: linear-gradient(180deg,white,blue); border-radius: 10px;border: none;">
+                            <div class="d-flex justify-content-center">
+                                <img style="width: 100px;" src="{% static 'public/ellipse-41@2x.png' %}" alt="">
+                            </div>
+                            <div class="my-5">
+                                <h2 class="text-center text-white">
+                                    Annonces Facebook
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reveal-b2 card mt-lg-5" style="border: none;">
+                        <div class="card-body" style="background: linear-gradient(180deg,white,blue); border-radius: 10px;border: none;">
+                            <div class="d-flex justify-content-center">
+                                <img style="width: 100px;" src="{% static 'public/ellipse-43@2x.png' %}" alt="">
+                            </div>
+                            <div class="my-5">
+                                <h2 class="text-center text-white">
+                                    Marketing Contenu
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reveal-r2 card" style="border: none;">
+                        <div class="card-body" style="background: linear-gradient(180deg,white,blue); border-radius: 10px;border: none;">
+                            <div class="d-flex justify-content-center">
+                                <img style="width: 100px;" src="{% static 'public/ellipse-42@2x.png' %}" alt="">
+                            </div>
+                            <div class="my-5">
+                                <h2 class="text-center text-white">
+                                    Audit SEO
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+                <div class="my-3 d-flex justify-content-center"> <a href="{% url 'contact' %}"> <button class="btn btn-primary btn-lg">Nous Contactez</button> </a> </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="container">
+            <h1 class="my-4 text-center px-2 px-md-5">
+                LocalHost Digital : Agence De Création Et Design Graphique
+            </h1>
+
+            <div class="d-flex justify-content-center">
+                <img style="width: 230px;" src="{% static 'public/ellipse-44@2x.png' %}" alt="">
+            </div>
+
+            <h3 class="text-center mt-5">
+                Nous sommes est une entreprise créative basée au Cameroun qui propose des services de conception graphique. Nous utilisons les logiciels les plus récents et employons des graphistes qualifiés pour vous fournir des services variés tels que : la création graphique, l'impression, l'organisation d'événements, la conception de sites web, le marketing en ligne et l'optimisation pour les moteurs de recherche.
+            </h3>
+
+
+        </div>
+    </section>
+
+    <section class="cont-awm-2 mt-5">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-6 ">
+                   <div class="sticky">
+                        <h2 class="my-4">Un guichet unique pour tous vos besoins en matière de graphisme.</h2>
+                        <h5>
+                            <ul>
+                                <li>Approche personnalisée : approche sur mesure ; approche individualisée</li><br>
+                                <li>Communication régulière d’entreprise : communication d'entreprise continue ; communication d'entreprise fréquente</li><br>
+                                <li>Solutions de conception et design sur mesure : solutions de création graphique personnalisées ; solutions de design adaptées à vos besoins</li><br>
+                                <li>Expertise en design Graphique de grande envergure : expertise en conception graphique de haut niveau ; compétence en création visuelle professionnelle</li><br>
+                                <li>Conception de la papeterie : conception des supports d'impression ; création des supports de communication écrits</li><br>
+                                <li>Profils d’entreprise : présentations d'entreprise ; profils de compagnie</li><br>
+                                <li>Conception de brochures : création de plaquettes publicitaires , design de dépliants</li><br>
+                                <li>Catalogues de produits : brochures de produits , liste de produits</li><br>
+                                <li>Soutien efficace impression-production : soutien efficace en production d'impression, assistance pour la production imprimée.</li><br>
+                            </ul>
+                        </h5>
+                   </div>
+                </div>
+                <div class="col-lg-6 my-5">
+                    <div class="row justify-content-center my-5">
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/person-icon.webp' %}" alt=""></div>
+
+                                    <h6>Social Media Marketing</h6>
+                                    <p>Marketing sur les Reseaux Sociaux</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/smartphone-icon.webp' %}" alt=""></div>
+                                    <h6>Optimisation CEO</h6>
+                                    <p>Amélioration de votre visibilité sur les Moteurs de Recherche</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/cloud-icon.webp' %}" alt=""></div>
+
+                                    <h6>Publicité sur Internet</h6>
+                                    <p>Création et Gestion de Campagnes publicitaires en Ligne</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6 mt-5 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center"><img src="{% static 'public/transfer-icon.webp' %}" alt=""></div>
+                                    <h6>Rédaction Web</h6>
+                                    <p>Création de Contenu de qualité pour vos plateformes en ligne</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pre-ft mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="reveal-t1 card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-22@2x.png' %}" alt=""></div>
+                            <h3  class="mb-4">Présente ton activité</h3>
+                            <p>Petite ou grande galaxie, expose ton univers, ton histoire et tes qualifications au grand public tout en démontrant ton savoir-faire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="reveal-t2 card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-23@2x.png' %}" alt=""></div>
+                            <h3 class="mb-4">Valorise tes prestations</h3>
+                            <p>Tu possèdes une expertise hors pair : mets-la en lumière ! Sois fier de tes compétences et mets en avant tes services, tes tarifs et tes zones d’intervention sur le web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="reveal-t3 card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center"><img src="{% static 'public/ellipse-24@2x.png' %}" alt=""></div>
+                            <h3 class="mb-4" >Sois joignable facilement</h3>
+                            <p>Tes clients ont besoin de toi ? Choisis quand et comment tu souhaites être contacté. Coordonnées téléphoniques, horaires d’ouverture et formulaire de contact bien à jour pour faciliter ton activité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer mt-5" style="background-color: #b1ecf5!important;padding: 0;margin: 0;">
+
+        <div class="container" style="z-index: 2;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <h2 class="reveal text-center mb-4 text-light">
+                        A propos de nous
+                    </h2>
+                    <h5>
+                        Fulife Consulting Sarl est une société de conseil et d’ingenieire informatique. Notre approche est d’être plus proche de nos clients, leur apporter toute notre expertise, notre savoir , notre savoir faire et notre savoir être pour répondre aux besoins de ces dernniers.
+                    </h5>
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <a href="{% url 'acceuil' %}">
+                        <img src="{% static 'public/ellipse-11@2x.png' %}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <h2 class="text-center text-light mb-4">
+                        Services
+                    </h2>
+
+                    <div>
+                        <a href="{% url 'dev-web-mobile' %}" class="link-f">Developpement Web et Mobile</a>
+                        <a href="{% url 'reseau&administrtion' %}" class="link-f">Reseau Informatique</a>
+                        <a href="{% url 'reseau&administrtion' %}" class="link-f">Administration systeme</a>
+                        <a href="{% url 'hebergement' %}" class="link-f">Hebergement Web</a>
+                        <a href="{% url 'marketing' %}" class="link-f">Marketing Digitale</a>
+                        <a href="{% url 'formation' %}" class="link-f">Conseils et formation</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <h3 class="text-center mb-4">
+
+                    </h3>
+                    <p style="font-size: 1.3rem;">Addresse: Rue Bebey Elame, Akwa. Douala</p>
+                    <p style="font-size: 1.3rem;">Phone: (+237) 676 69 59 77 / 694 00 36 07</p>
+                    <p style="font-size: 1.3rem;">Email: info@fulife-consulting.cm</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-wrap logo-ft">
+                            <a href="https://www.facebook.com/fulifesarl" target="_blank">
+                            <img class="m-1" src="{% static 'public/ellipse-12@2x.png' %}" alt="facebook">
+                            </a>
+                            <a href="https://twitter.com/Fulifesarl?s=09" target="_blank">
+                            <img class="m-1" src="{% static 'public/ellipse-13@2x.png' %}" alt="twitter">
+                            </a>
+                            <a href="https://instagram.com/fulifesarl?igshid=MzRlODBiNWFlZA==" target="_blank">
+                            <img class="m-1" src="{% static 'public/ellipse-14@2x.png' %}" alt="instagram">
+                            </a>
+                            <a href="https://youtube.com/@fulifeconsulting6456" target="_blank">
+                            <img class="m-1" src="{% static 'public/ellipse-15@2x.png' %}" alt="youtube">
+                            </a>
+                            <a href="https://www.linkedin.com/company/fulifesarl/" target="_blank">
+                            <img  class="m-1" src="{% static 'public/ellipse-16@2x.png' %}" alt="linkln">
+                            </a>
+                            <a href="https://wa.me/+237695607089" target="_blank">
+                            <img class="m-1" src="{% static 'public/ellipse-17@2x.png' %}" alt="whatsapp">
+                            </a>
+                            <a href="{% url 'chatbot' %}" target="_blank">
+                            <img class="m-1" src="{% static 'public/ellipse-18@2x.png' %}" alt="chat">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="py-3">
+        <div class="container text-center">
+            Copyright © Fulife Consulting Sarl 2020 - All Right Reserved. Designed and Developed by Fulife Consulting Sarl
+        </div>
+    </section>
+
+    <!-- menu responsive -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Menus</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="phone-cont mt-5">
+                <a class="link-men" href="">Accueil</a>
+                <a class="link-men" href="">A propos</a>
+                <a class="link-men" href="">Service</a>
+                <a class="link-men" href="">Realisation</a>
+                <a class="link-men" href="">Contact</a>
+            </div>
+
+
+        </div>
+    </div>
+   <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/js/reveal.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/reveal-custom.js' %}"></script>
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+                <script>
+    window.addEventListener("load", function() {
+      const loader = document.getElementById("loader");
+      loader.style.display = "none";
+    });
+  </script>
+
+
+<!--
+   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+   <script src="./assets/bootstrap/js/scrollreveal.min.js"></script>
+   <script src="./assets/bootstrap/js/reveal-custom.js"></script>
+   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+   -->
+
+
+</body>
+</html>
